@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    >
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Image"
+        android:id="@+id/button"
+        android:onClick="addImageUpdate"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/imageViewUpdate"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:border_color="#FF000000"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter Name"
+        android:ems="10"
+        android:id="@+id/edNameUpdate"
+        android:layout_below="@+id/imageViewUpdate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="57dp"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:hint="Enter Phone Number"
+        android:id="@+id/edPhoneUpdate"
+        android:layout_below="@+id/edNameUpdate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/edNameUpdate"
+        android:layout_alignEnd="@+id/edNameUpdate" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/edEmailUpdate"
+        android:hint="Enter Email Address"
+        android:layout_below="@+id/edPhoneUpdate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/edPhoneUpdate"
+        android:layout_alignEnd="@+id/edPhoneUpdate" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Pay Amount"
+        android:id="@+id/edPayAmount"
+        android:layout_below="@+id/edEmailUpdate"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Borrow Amount"
+        android:id="@+id/edBorrowAmount"
+        android:layout_below="@+id/edPayAmount"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:onClick="update"
+        android:id="@+id/button3"
+        android:layout_below="@+id/edBorrowAmount"
+        android:layout_alignLeft="@+id/imageViewUpdate"
+        android:layout_alignStart="@+id/imageViewUpdate" />
+
+
+
+</RelativeLayout>
